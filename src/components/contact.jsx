@@ -1,7 +1,6 @@
 import React from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Form from './form';
-import Footer from './footer';
 
 const ContactPage = props => (
   <>
@@ -48,8 +47,6 @@ const ContactPage = props => (
         </div>
       </div>
     </section>
-
-    <Footer/>
   </>
 )
 
