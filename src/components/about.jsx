@@ -1,8 +1,25 @@
 import React from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { Helmet } from "react-helmet";
+
+const helmetData = (
+  <Helmet>
+      <meta name="description" content="My portfolio's about me page" />
+      <title>Gareth Boughtwood - Portfolio - React.js - Tailwind CSS - About me</title>
+      <link rel="canonical" href="https://www.webdev.me.uk/about"/>
+      <meta property="og:title" content="About me" key="og:title" />
+      <meta
+        property="og:description"
+        content="My portfolio's about me page"
+        key="og:description"
+      />
+      <meta name="keywords" content="about" />
+  </Helmet>
+);
 
 const AboutPage = props => (
   <>
+    {helmetData}
      <section className="bg-squares-pattern border-b border-gray-400 bg-repeat py-20 lg:py-20">
       <div className="2xl:container 2xl:mx-auto px-4 2xl:px-0">
         <div className="flex items-center justify-left h-full flex-wrap md:flex-nowrap">

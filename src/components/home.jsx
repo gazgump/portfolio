@@ -2,6 +2,7 @@ import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { Helmet } from "react-helmet";
 
 import "swiper/css";
 import 'swiper/css/navigation';
@@ -11,6 +12,18 @@ import { Navigation } from 'swiper/modules';
 
 const HomePage = props => (
   <>
+    <Helmet>
+        <meta name="description" content="My portfolio's home page" />
+        <title>Gareth Boughtwood - Portfolio - React.js - Tailwind CSS</title>
+        <link rel="canonical" href="https://www.webdev.me.uk/"/>
+        <meta property="og:title" content="Home" key="og:title" />
+        <meta
+          property="og:description"
+          content="My portfolio's home page"
+          key="og:description"
+        />
+        <meta name="keywords" content="home" />
+    </Helmet>
     <section className="bg-squares-pattern border-b border-gray-400 bg-repeat py-20 lg:py-20">
       <div className="2xl:container 2xl:mx-auto px-4 2xl:px-0">
         <div className="flex items-center justify-left h-full flex-wrap md:flex-nowrap">
@@ -563,7 +576,7 @@ const HomePage = props => (
 
     <section className="bg-white">
       <div className="2xl:container 2xl:mx-auto py-12 px-4 2xl:px-0">
-        <div class="elfsight-app-a8f20ab5-5f6d-4f70-8635-d4bea0dba39a" data-elfsight-app-lazy></div>
+        <div className="elfsight-app-a8f20ab5-5f6d-4f70-8635-d4bea0dba39a" data-elfsight-app-lazy></div>
       </div>
     </section>
 
@@ -573,7 +586,7 @@ const HomePage = props => (
       </div>
     </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.55696111325!2d-0.14738891876519564!3d50.83746490167411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C%20Brighton%20and%20Hove!5e0!3m2!1sen!2suk!4v1729783389339!5m2!1sen!2suk" width="100%" height="450" allowfullscreen="" loading="lazy" title="portfolio map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.55696111325!2d-0.14738891876519564!3d50.83746490167411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C%20Brighton%20and%20Hove!5e0!3m2!1sen!2suk!4v1729783389339!5m2!1sen!2suk" width="100%" height="450" allowFullScreen="" loading="lazy" title="portfolio map" referrerPolicy="no-referrer-when-downgrade"></iframe>
   </>
 )
 
